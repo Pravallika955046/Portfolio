@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pravallika Pydi • Data Portfolio</title>
+  <meta name="description" content="Data Analyst portfolio of Pravallika Pydi — projects, dashboards, and case studies." />
+  <style>
+    :root{--bg:#0f1220;--card:#13172a;--ink:#e7eaf6;--muted:#a6accd;--line:#232842;--brand:#7b6dff}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+    header{position:sticky;top:0;background:rgba(15,18,32,.7);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav .brand{font-weight:700}
+    nav a{padding:10px 12px;border-radius:8px;color:var(--muted);text-decoration:none}
+    nav a:hover{background:var(--line);color:var(--ink)}
+    .hero{padding:56px 0;border-bottom:1px solid var(--line)}
+    h1{margin:0 0 6px;font-size:36px}
+    p.lead{margin:8px 0 18px;color:var(--muted);font-size:18px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#5ba1ff);color:#fff;text-decoration:none;font-weight:600}
+    section{padding:42px 0}
+    h2{margin:0 0 10px;font-size:26px}
+    .sub{color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:720px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .thumb{aspect-ratio:16/9;background:#0b0e1c;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);margin-bottom:10px}
+    ul{margin:10px 0 0}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{border:1px solid var(--line);background:#0b0e1c;color:#cbd2ff;border-radius:999px;padding:8px 12px;font-size:14px}
+    footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand"><a href="#home">Pravallika Pydi</a></div>
+        <div>
+          <a href="#projects">Projects</a>
+          <a href="#case">Case Studies</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="wrap">
+    <section class="hero">
+      <h1>Data Analyst • Data Engineer</h1>
+      <p class="lead">I turn messy data into clear decisions. SQL • Python • Tableau/Power BI • ETL.</p>
+      <a class="btn" href="#projects">See Projects</a>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="sub">A few of my data projects. Each one includes analysis, dashboards, and case studies.</p>
+      <div class="grid cols-3">
+        <article class="card">
+          <div class="thumb">Superstore Dashboard</div>
+          <h3>Superstore Sales Performance</h3>
+          <p class="sub">KPIs for revenue, profit, and segments. Identified high-margin categories and regional trends.</p>
+          <p><a href="https://public.tableau.com/your-superstore-link" target="_blank" rel="noopener">View Tableau</a> • 
+          <a href="https://github.com/Pravallika955046/superstore-dashboard" target="_blank" rel="noopener">GitHub Repo</a></p>
+        </article>
+        <article class="card">
+          <div class="thumb">Cyclistic</div>
+          <h3>Cyclistic: Casual vs Members</h3>
+          <p class="sub">12-month trip analysis. Usage patterns by day/time/station with recommendations to increase memberships.</p>
+          <p><a href="https://github.com/Pravallika955046/cyclistic-case-study" target="_blank" rel="noopener">Case Study Repo</a></p>
+        </article>
+        <article class="card">
+          <div class="thumb">Bellabeat</div>
+          <h3>Bellabeat Usage Insights</h3>
+          <p class="sub">Activity and sleep trends from wearable data; marketing suggestions from behavior clusters.</p>
+          <p><a href="https://github.com/Pravallika955046/bellabeat-analysis" target="_blank" rel="noopener">GitHub Repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="case">
+      <h2>Case Studies</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>Case Study Template</h3>
+          <ul>
+            <li><strong>Ask:</strong> Business task & success metrics</li>
+            <li><strong>Prepare:</strong> Source, structure, limitations</li>
+            <li><strong>Process:</strong> Cleaning steps</li>
+            <li><strong>Analyze:</strong> EDA & key findings</li>
+            <li><strong>Share:</strong> Visuals/Dashboards</li>
+            <li><strong>Act:</strong> Recommendations</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Dataset Citation</h3>
+          <p class="sub">Always cite public/open datasets. Example: Kaggle – Dataset Name (URL), accessed Month YYYY.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">SQL (Joins, CTEs, Windows)</span>
+        <span class="skill">Python (Pandas, NumPy)</span>
+        <span class="skill">Tableau / Power BI</span>
+        <span class="skill">Data Cleaning & QA</span>
+        <span class="skill">Excel (Pivot, VLOOKUP)</span>
+        <span class="skill">ETL & APIs</span>
+        <span class="skill">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="sub">Open to Data Analyst / Data Engineer roles.</p>
+      <ul>
+        <li>Email: <a href="mailto:pravallika955046@gmail.com">pravallika955046@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/pravallikapydi" target="_blank" rel="noopener">linkedin.com/in/pravallikapydi</a></li>
+        <li>GitHub: <a href="https://github.com/Pravallika955046" target="_blank" rel="noopener">github.com/Pravallika955046</a></li>
+        <li>Tableau: <a href="https://public.tableau.com/app/profile/pravallika" target="_blank" rel="noopener">Tableau Public</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Pravallika Pydi</div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
