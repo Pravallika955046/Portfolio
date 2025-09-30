@@ -4,39 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pravallika Pydi · Data Analyst</title>
-  <meta name="description" content="Portfolio of Pravallika Pydi — About, Projects, Resume, Contact, and Dashboards." />
+  <meta name="description" content="Portfolio of Pravallika Pydi — About, Projects, Resume, Contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#ffffff;--ink:#0f172a;--muted:#5b6275;--line:#e7e8ee;--brand:#2b59ff;--accent:#00bfa6;--card:#f7f8fc;--shadow:0 10px 30px rgba(16,24,40,.06)}
+    :root{--bg:#ffffff;--ink:#0f172a;--muted:#5b6275;--line:#e7e8ee;--brand:#2b59ff;--card:#f7f8fc;--shadow:0 10px 30px rgba(16,24,40,.06)}
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
 
-    /* Header */
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
     .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
     .brand{font-family:"Playfair Display",serif;font-weight:700;font-size:22px}
     .nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0}
     .nav a.link{padding:10px 12px;border-radius:10px;color:var(--muted)}
     .nav a.link:hover{background:var(--card);color:var(--ink)}
+
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;font-weight:600;box-shadow:var(--shadow)}
     .btn.primary{background:var(--ink);color:#fff}
     .btn.ghost{background:#eef1ff;color:#1b2a6b}
 
-    /* Hero (About left • Photo right) */
     .hero{padding:64px 0;border-bottom:1px solid var(--line)}
     .hero-grid{display:grid;gap:28px;align-items:center}
     @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr}}
     .eyebrow{color:var(--brand);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
     .hero h1{font-size:44px;line-height:1.15;margin:6px 0 10px}
     .hero p{color:var(--muted);font-size:18px;margin:0 0 18px}
-    .avatar{width:320px;max-width:100%;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:6px solid var(--card);box-shadow:var(--shadow);margin:0 auto}
+    .avatar{width:300px;max-width:100%;aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:6px solid var(--card);box-shadow:var(--shadow);margin:0 auto}
 
-    /* Sections */
     section{padding:56px 0}
     h2{font-family:"Playfair Display",serif;font-size:30px;margin:0 0 12px}
     .sub{color:var(--muted);margin:0 0 18px}
@@ -47,7 +45,6 @@
     .tags{display:flex;gap:8px;flex-wrap:wrap}
     .tag{font-size:12px;color:#51607d;background:#f1f4ff;border:1px solid #e0e6ff;padding:6px 10px;border-radius:999px}
 
-    /* Footer */
     footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted)}
   </style>
 </head>
@@ -66,19 +63,16 @@
   <main id="home" class="wrap">
     <section class="hero" id="about">
       <div class="hero-grid">
-        <!-- Left: About content -->
         <div>
           <div class="eyebrow">About Me</div>
-          <h1>Hi, I’m Pravallika — I analyze data and build dashboards that drive action.</h1>
-          <p>I’m a Data Analyst focused on SQL, Python (Pandas), and Tableau. I turn raw data into clean datasets, clear insights, and interactive visuals that help teams make decisions quickly. I enjoy shaping business questions into measurable metrics and simple recommendations.</p>
+          <h1>Hi, I’m Pravallika</h1>
+          <p>I’m a Data Analyst with skills in SQL, Python, and Tableau. I enjoy working with data, cleaning it, finding patterns, and creating dashboards that make information easy to understand. My goal is to help organizations make better decisions using data.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
             <a class="btn primary" href="#projects">See My Projects</a>
             <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
           </div>
         </div>
-        <!-- Right: Photo -->
         <div class="avatar">
-          <!-- Replace src with your actual photo URL -->
           <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Pravallika Pydi portrait" />
         </div>
       </div>
@@ -114,7 +108,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p class="sub">Open to Data Analyst roles and collaborations.</p>
+      <p class="sub">Feel free to reach out for opportunities or collaborations.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <a class="btn primary" href="mailto:pravallika955046@gmail.com">Email</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/pravallikapydi" target="_blank" rel="noopener">LinkedIn</a>
