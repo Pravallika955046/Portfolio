@@ -3,111 +3,152 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pravallika Pydi • Data Portfolio</title>
-  <meta name="description" content="Data Analyst portfolio of Pravallika Pydi — projects, dashboards, and case studies." />
+  <title>Pravallika Pydi · Data Portfolio</title>
+  <meta name="description" content="Portfolio of Pravallika Pydi — Data Analyst. Projects, case studies, dashboards, resume, and contact." />
   <style>
-    :root{--bg:#0f1220;--card:#13172a;--ink:#e7eaf6;--muted:#a6accd;--line:#232842;--brand:#7b6dff}
-    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}a{color:inherit}
-    .wrap{max-width:980px;margin:0 auto;padding:0 18px}
-    header{position:sticky;top:0;background:rgba(15,18,32,.7);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    nav .brand{font-weight:700}
-    nav a{padding:10px 12px;border-radius:8px;color:var(--muted);text-decoration:none}
-    nav a:hover{background:var(--line);color:var(--ink)}
-    .hero{padding:56px 0;border-bottom:1px solid var(--line)}
-    h1{margin:0 0 6px;font-size:36px}
-    p.lead{margin:8px 0 18px;color:var(--muted);font-size:18px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#5ba1ff);color:#fff;text-decoration:none;font-weight:600}
-    section{padding:42px 0}
-    h2{margin:0 0 10px;font-size:26px}
+    :root{
+      --bg:#0b0f1a;--panel:#0f1524;--ink:#e9ecf7;--muted:#9aa3bd;--line:#1a2236;--brand:#7c6cff;--brand2:#56b4fc;--ok:#2ee6a6;
+      --shadow:0 10px 30px rgba(10,14,30,.35), inset 0 1px 0 rgba(255,255,255,.02)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--ink)}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(11,15,26,.65);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{font-weight:800;letter-spacing:.4px}
+    .nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+    .nav a{padding:10px 12px;border-radius:10px;color:var(--muted)}
+    .nav a:hover{background:var(--line);color:var(--ink)}
+    .cta{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;font-weight:700;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:var(--shadow);color:#fff}
+    .cta.ghost{background:transparent;border:1px solid var(--line);box-shadow:none;color:var(--ink)}
+    /* Hero */
+    .hero{padding:72px 0 50px;border-bottom:1px solid var(--line)}
+    .eyebrow{display:inline-block;font-size:12px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 10px;margin-bottom:12px}
+    .hero h1{font-size:44px;line-height:1.15;margin:0 0 10px}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 22px}
+    .chips{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 28px}
+    .chip{border:1px solid var(--line);background:#0a1224;color:#c9d1f2;padding:8px 12px;border-radius:999px;font-size:14px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    section{padding:56px 0}
+    h2{font-size:28px;margin:0 0 10px}
     .sub{color:var(--muted);margin:0 0 18px}
-    .grid{display:grid;gap:16px}
-    @media(min-width:720px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-    .thumb{aspect-ratio:16/9;background:#0b0e1c;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);margin-bottom:10px}
-    ul{margin:10px 0 0}
-    .skills{display:flex;flex-wrap:wrap;gap:10px}
-    .skill{border:1px solid var(--line);background:#0b0e1c;color:#cbd2ff;border-radius:999px;padding:8px 12px;font-size:14px}
-    footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted)}
+    /* Cards */
+    .grid{display:grid;gap:18px}
+    @media(min-width:760px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}
+    .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#141c33,#0d1327);border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#9aa3bd}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;color:var(--muted);border:1px dashed var(--line);padding:6px 10px;border-radius:999px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+    .pill:hover{color:var(--ink)}
+    /* Skills */
+    .skills{display:flex;gap:10px;flex-wrap:wrap}
+    .skill{background:#0c142a;border:1px solid var(--line);padding:9px 12px;border-radius:10px;color:#cbd2ff;font-size:14px}
+    /* Footer */
+    footer{padding:44px 0;border-top:1px solid var(--line);color:var(--muted)}
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <nav>
-        <div class="brand"><a href="#home">Pravallika Pydi</a></div>
-        <div>
-          <a href="#projects">Projects</a>
-          <a href="#case">Case Studies</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+    <div class="wrap nav">
+      <a class="brand" href="#home">PP</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#case">Case Studies</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="cta" href="#projects">View Work</a>
     </div>
   </header>
 
   <main id="home" class="wrap">
     <section class="hero">
-      <h1>Data Analyst</h1>
-      <p class="lead">I turn messy data into clear decisions. SQL • Python • Tableau/Power BI • ETL.</p>
-      <a class="btn" href="#projects">See Projects</a>
+      <span class="eyebrow">Portfolio</span>
+      <h1>Pravallika Pydi</h1>
+      <p>Data Analyst focused on SQL, Python (Pandas), and Tableau. I turn messy datasets into clear decisions and interactive dashboards.</p>
+      <div class="chips">
+        <span class="chip">SQL • Joins, CTEs, Windows</span>
+        <span class="chip">Python • Pandas, NumPy</span>
+        <span class="chip">Tableau / Power BI</span>
+        <span class="chip">Data Cleaning & QA</span>
+        <span class="chip">ETL & APIs</span>
+      </div>
+      <div class="row">
+        <a class="cta" href="#projects">See Projects</a>
+        <a class="cta ghost" href="#contact">Contact</a>
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <p class="sub">A few of my data projects. Each one includes analysis, dashboards, and case studies.</p>
+      <h2>Featured Projects</h2>
+      <p class="sub">Each project includes the business task, data preparation, analysis and a dashboard/case study.</p>
       <div class="grid cols-3">
         <article class="card">
           <div class="thumb">Superstore Dashboard</div>
           <h3>Superstore Sales Performance</h3>
-          <p class="sub">KPIs for revenue, profit, and segments. Identified high-margin categories and regional trends.</p>
-          <p><a href="https://public.tableau.com/your-superstore-link" target="_blank" rel="noopener">View Tableau</a> • 
-          <a href="https://github.com/Pravallika955046/superstore-dashboard" target="_blank" rel="noopener">GitHub Repo</a></p>
+          <p class="sub">KPIs for revenue & profit with segment and regional trends. Surfaced high‑margin categories.</p>
+          <div class="tags"><span class="tag">Tableau</span><span class="tag">EDA</span><span class="tag">KPI Design</span></div>
+          <div class="row">
+            <a class="pill" href="https://public.tableau.com/your-superstore-link" target="_blank" rel="noopener">View Tableau</a>
+            <a class="pill" href="https://github.com/Pravallika955046/superstore-dashboard" target="_blank" rel="noopener">GitHub Repo</a>
+          </div>
         </article>
         <article class="card">
           <div class="thumb">Cyclistic</div>
           <h3>Cyclistic: Casual vs Members</h3>
-          <p class="sub">12-month trip analysis. Usage patterns by day/time/station with recommendations to increase memberships.</p>
-          <p><a href="https://github.com/Pravallika955046/cyclistic-case-study" target="_blank" rel="noopener">Case Study Repo</a></p>
+          <p class="sub">12‑month trip analysis. Usage patterns by day/time/station and recommendations to increase memberships.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Visualization</span></div>
+          <div class="row">
+            <a class="pill" href="https://github.com/Pravallika955046/cyclistic-case-study" target="_blank" rel="noopener">Case Study Repo</a>
+          </div>
         </article>
         <article class="card">
           <div class="thumb">Bellabeat</div>
           <h3>Bellabeat Usage Insights</h3>
-          <p class="sub">Activity and sleep trends from wearable data; marketing suggestions from behavior clusters.</p>
-          <p><a href="https://github.com/Pravallika955046/bellabeat-analysis" target="_blank" rel="noopener">GitHub Repo</a></p>
+          <p class="sub">Activity & sleep trends from wearable data; marketing suggestions from behavior clusters.</p>
+          <div class="tags"><span class="tag">Pandas</span><span class="tag">Storytelling</span></div>
+          <div class="row">
+            <a class="pill" href="https://github.com/Pravallika955046/bellabeat-analysis" target="_blank" rel="noopener">GitHub Repo</a>
+          </div>
         </article>
       </div>
     </section>
 
     <section id="case">
       <h2>Case Studies</h2>
+      <p class="sub">I follow Ask → Prepare → Process → Analyze → Share → Act. Datasets are cited for reproducibility.</p>
       <div class="grid cols-2">
         <article class="card">
-          <h3>Case Study Template</h3>
-          <ul>
+          <h3>Case Study Outline</h3>
+          <ul class="sub">
             <li><strong>Ask:</strong> Business task & success metrics</li>
             <li><strong>Prepare:</strong> Source, structure, limitations</li>
-            <li><strong>Process:</strong> Cleaning steps</li>
+            <li><strong>Process:</strong> Cleaning steps & checks</li>
             <li><strong>Analyze:</strong> EDA & key findings</li>
-            <li><strong>Share:</strong> Visuals/Dashboards</li>
-            <li><strong>Act:</strong> Recommendations</li>
+            <li><strong>Share:</strong> Visuals / dashboards</li>
+            <li><strong>Act:</strong> Recommendations & impact</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Dataset Citation</h3>
-          <p class="sub">Always cite public/open datasets. Example: Kaggle – Dataset Name (URL), accessed Month YYYY.</p>
+          <h3>Dataset Citations</h3>
+          <p class="sub">Example: Kaggle — Dataset Name (URL), accessed Month YYYY. City Open Data — Dataset Title (URL).</p>
         </article>
       </div>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
+      <p class="sub">Tools & techniques I use.</p>
       <div class="skills">
         <span class="skill">SQL (Joins, CTEs, Windows)</span>
         <span class="skill">Python (Pandas, NumPy)</span>
-        <span class="skill">Tableau / Power BI</span>
-        <span class="skill">Data Cleaning & QA</span>
+        <span class="skill">Visualization (Tableau, Power BI)</span>
         <span class="skill">Excel (Pivot, VLOOKUP)</span>
+        <span class="skill">Data Cleaning & QA</span>
         <span class="skill">ETL & APIs</span>
         <span class="skill">Git & GitHub</span>
       </div>
@@ -115,19 +156,19 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p class="sub">Open to Data Analyst / Data Engineer roles.</p>
-      <ul>
-        <li>Email: <a href="mailto:pravallika955046@gmail.com">pravallika955046@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/pravallikapydi" target="_blank" rel="noopener">linkedin.com/in/pravallikapydi</a></li>
-        <li>GitHub: <a href="https://github.com/Pravallika955046" target="_blank" rel="noopener">github.com/Pravallika955046</a></li>
-        <li>Tableau: <a href="https://public.tableau.com/app/profile/pravallika" target="_blank" rel="noopener">Tableau Public</a></li>
-      </ul>
+      <p class="sub">Open to Data Analyst roles. Let’s connect.</p>
+      <div class="row">
+        <a class="pill" href="mailto:pravallika955046@gmail.com">pravallika955046@gmail.com</a>
+        <a class="pill" href="https://www.linkedin.com/in/pravallikapydi" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="pill" href="https://github.com/Pravallika955046" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://public.tableau.com/app/profile/pravallika" target="_blank" rel="noopener">Tableau Public</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">© <span id="y"></span> Pravallika Pydi</div>
+    <div class="wrap">© <span id="y"></span> Pravallika Pydi · Built with HTML & CSS · Hosted on GitHub Pages</div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
